@@ -62,7 +62,7 @@ keymap.set('n', 'tr', ':terminal<CR>')
 keymap.set('t', '<Esc>', '<C-Bslash><C-N>')
 
 -- emmet keymap
-vim.g.user_emmet_leader_key = ','
+vim.g.user_emmet_leader_key = '?'
 
 -----more keymap by rigel in plugins docs------
 -- lspsaga

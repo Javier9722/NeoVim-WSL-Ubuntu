@@ -55,4 +55,11 @@ packer.startup(function(use)
   use 'dinhhuy258/git.nvim' -- For git blame & browse
   use { 'ojroques/nvim-osc52' } -- clipboard by edu xd
   use 'mattn/emmet-vim' -- html5 high.. syntax by edu xd
+  use { 'mrshmllow/document-color.nvim', config = function()
+    require("document-color").setup {
+      -- Default options
+      mode = "foreground", -- "background" | "foreground" | "single"
+    }
+  end
+  }
 end)

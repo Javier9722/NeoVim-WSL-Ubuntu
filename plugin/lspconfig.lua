@@ -34,6 +34,10 @@ local on_attach = function(client, bufnr)
   --buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
   buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
   --buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
+  if client.server_capabilities.colorProvider then
+    -- Attach document colour support
+    require("document-color").buf_attach(bufnr)
+  end
 end
 
 protocol.CompletionItemKind = {
@@ -107,9 +111,10 @@ nvim_lsp.sumneko_lua.setup {
   },
 }
 
+local captest = vim.lsp.protocol.make_client_capabilities()
 nvim_lsp.tailwindcss.setup {
   on_attach = on_attach,
-  capabilities = capabilities
+  capabilities = captest
 }
 
 nvim_lsp.cssls.setup {
