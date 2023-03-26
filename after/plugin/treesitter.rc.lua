@@ -11,6 +11,8 @@ ts.setup {
     disable = {},
   },
   ensure_installed = {
+    "markdown",
+    "markdown_inline",
     "astro",
     "tsx",
     "toml",
@@ -20,7 +22,8 @@ ts.setup {
     "yaml",
     "swift",
     "css",
-    "html"
+    "html",
+    "lua"
   },
   autotag = {
     enable = true,
