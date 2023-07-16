@@ -39,6 +39,7 @@ cmp.setup({
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
     { name = 'buffer' },
+    { name = 'react-nextjs-snippets' }
   }),
   formatting = {
     format = lspkind.cmp_format({

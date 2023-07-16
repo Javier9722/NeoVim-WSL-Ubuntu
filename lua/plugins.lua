@@ -63,4 +63,5 @@ packer.startup(function(use)
     }
   end
   }
+  use "avneesh0612/react-nextjs-snippets"
 end)

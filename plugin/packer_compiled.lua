@@ -220,6 +220,11 @@ _G.packer_plugins = {
     path = "/home/javier/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["react-nextjs-snippets"] = {
+    loaded = true,
+    path = "/home/javier/.local/share/nvim/site/pack/packer/start/react-nextjs-snippets",
+    url = "https://github.com/avneesh0612/react-nextjs-snippets"
+  },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
     path = "/home/javier/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
